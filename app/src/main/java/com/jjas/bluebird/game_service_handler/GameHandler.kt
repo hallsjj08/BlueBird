@@ -1,8 +1,9 @@
-package com.jjas.bluebird
+package com.jjas.bluebird.game_service_handler
 
 import android.os.Handler
 import android.os.Looper
 import android.os.Message
+import com.jjas.bluebird.core_game.GameImpl
 
 class GameHandler(looper: Looper, val game: GameImpl) : Handler(looper) {
 

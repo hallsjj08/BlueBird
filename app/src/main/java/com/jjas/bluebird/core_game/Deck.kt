@@ -1,5 +1,6 @@
-package com.jjas.bluebird
+package com.jjas.bluebird.core_game
 
+import com.jjas.bluebird.R
 import java.util.*
 import kotlin.collections.ArrayList
 

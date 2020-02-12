@@ -1,6 +1,9 @@
-package com.jjas.bluebird
+package com.jjas.bluebird.core_game
 
-class SinglePlayerGame(val listner: GameStateListener) : GameImpl {
+import com.jjas.bluebird.game_service_handler.GameStateListener
+
+class SinglePlayerGame(listener: GameStateListener) :
+    Game(listener) {
 
     lateinit var trump: String
     private var nest = arrayListOf<Card>()
@@ -22,7 +25,7 @@ class SinglePlayerGame(val listner: GameStateListener) : GameImpl {
             if(card != null) hands[i % 4].add(card)
         }
 
-        listner.onGameStateChanged("startGame")
+        listener.onGameStateChanged("startGame")
 
     }
 

@@ -1,4 +1,6 @@
-package com.jjas.bluebird
+package com.jjas.bluebird.core_game
+
+import com.jjas.bluebird.core_game.Card
 
 interface GameImpl {
 

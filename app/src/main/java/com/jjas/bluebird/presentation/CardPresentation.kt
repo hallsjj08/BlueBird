@@ -1,4 +1,4 @@
-package com.jjas.bluebird
+package com.jjas.bluebird.presentation
 
 import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize

@@ -1,4 +1,4 @@
-package com.jjas.bluebird
+package com.jjas.bluebird.core_game
 
 interface PresentationDataMapper<T, K> {
 

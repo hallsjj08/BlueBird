@@ -1,6 +1,6 @@
 package com.jjas.bluebird
 
-import org.junit.Assert
+import com.jjas.bluebird.core_game.SinglePlayerGame
 import org.junit.Test
 
 import org.junit.Assert.*

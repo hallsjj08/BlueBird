@@ -1,4 +1,4 @@
-package com.jjas.bluebird
+package com.jjas.bluebird.game_service_handler
 
 import android.os.Parcelable
 

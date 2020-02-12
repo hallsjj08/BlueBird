@@ -1,0 +1,16 @@
+package com.jjas.bluebird
+
+class Player(val id: Long, val name: String, val hand: ArrayList<Card>) : PresentationDataMapper<PlayerPresentation, PlayerDataModel> {
+
+    fun addCard(card: Card) {
+        hand.add(card)
+    }
+
+    override fun mapToPresentation(): PlayerPresentation {
+        return PlayerPresentation(id, name, hand.map { it.mapToPresentation() })
+    }
+
+    override fun mapToDataModel(): PlayerDataModel {
+        return PlayerDataModel(id, name, hand.map { it.mapToDataModel() })
+    }
+}

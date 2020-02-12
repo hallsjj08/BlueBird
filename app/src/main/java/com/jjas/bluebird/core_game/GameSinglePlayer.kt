@@ -25,7 +25,9 @@ class GameSinglePlayer(listener: GameStateListener) :
             if(card != null) hands[i % 4].add(card)
         }
 
-        listener.onGameStateChanged("startGame")
+        val player = Player(0, "", ArrayList())
+
+        listener.onGameStateChanged("startGame", player.mapToPresentation())
 
     }
 

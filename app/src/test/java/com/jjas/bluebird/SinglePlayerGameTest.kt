@@ -1,6 +1,6 @@
 package com.jjas.bluebird
 
-import com.jjas.bluebird.core_game.SinglePlayerGame
+import com.jjas.bluebird.core_game.GameSinglePlayer
 import org.junit.Test
 
 import org.junit.Assert.*
@@ -13,7 +13,7 @@ import org.junit.Assert.*
 class SinglePlayerGameTest {
     @Test
     fun testStartGame() {
-        val game = SinglePlayerGame()
+        val game = GameSinglePlayer()
         game.startGame()
         assertEquals(5, game.getNest().size)
         val hands = game.getHands()

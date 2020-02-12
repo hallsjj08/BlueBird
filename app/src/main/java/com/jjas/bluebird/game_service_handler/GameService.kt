@@ -7,7 +7,7 @@ import android.os.IBinder
 import android.os.Messenger
 import android.os.Parcelable
 import androidx.localbroadcastmanager.content.LocalBroadcastManager
-import com.jjas.bluebird.core_game.SinglePlayerGame
+import com.jjas.bluebird.core_game.GameSinglePlayer
 
 class GameService: Service(), GameStateListener {
 
@@ -17,7 +17,7 @@ class GameService: Service(), GameStateListener {
         handlerThread.start()
         val gameHandler = GameHandler(
             handlerThread.looper,
-            SinglePlayerGame(this)
+            GameSinglePlayer(this)
         )
         return Messenger(gameHandler).binder
     }

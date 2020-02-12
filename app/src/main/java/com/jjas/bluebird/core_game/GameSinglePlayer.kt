@@ -2,7 +2,7 @@ package com.jjas.bluebird.core_game
 
 import com.jjas.bluebird.game_service_handler.GameStateListener
 
-class SinglePlayerGame(listener: GameStateListener) :
+class GameSinglePlayer(listener: GameStateListener) :
     Game(listener) {
 
     lateinit var trump: String

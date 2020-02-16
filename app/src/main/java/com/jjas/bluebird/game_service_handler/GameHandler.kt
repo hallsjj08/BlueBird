@@ -11,18 +11,13 @@ class GameHandler(looper: Looper, val game: GameImpl) : Handler(looper) {
         super.handleMessage(msg)
         when(msg.what) {
 
-            MESSAGE_START_GAME -> game.startGame(msg.)
+            MESSAGE_START_GAME -> game.startGame(0)
 
             MESSAGE_BID_PASS -> game.bidPass(msg.arg1)
 
-            MESSAGE_SUBMIT_NEST -> game.run {
-                val data = msg.data
-                val trump = data.getString("")
-                val nest = data.getParcelableArray("")
-                submitNest(trump, nest)
-            }
+            MESSAGE_SUBMIT_NEST -> game.submitNest("", ArrayList())
 
-            MESSAGE_PLAY_CARD -> game.playCard(msg.arg1, msg.arg2)
+            MESSAGE_PLAY_CARD -> game.playCard(0)
         }
     }
 
